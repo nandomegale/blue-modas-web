@@ -1,4 +1,4 @@
-const mainURL: string = "https://blue-modas-web.herokuapp.com"
+const mainURL: string = "https://blue-modas-api.herokuapp.com/"
 
 export const environment = {
   production: true,
