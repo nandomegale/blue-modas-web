@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "blue-modas": {
+    "blue-modas-web": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/blue-modas",
+            "outputPath": "dist/blue-modas-web",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "blue-modas:build"
+            "browserTarget": "blue-modas-web:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "blue-modas:build:production"
+              "browserTarget": "blue-modas-web:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "blue-modas:build"
+            "browserTarget": "blue-modas-web:build"
           }
         },
         "test": {
@@ -110,15 +110,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "blue-modas:serve"
+            "devServerTarget": "blue-modas-web:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "blue-modas:serve:production"
+              "devServerTarget": "blue-modas-web:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "blue-modas"
+    }
+  },
+  "defaultProject": "blue-modas-web"
 }
