@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="form-group">
+            <label for="">Nome</label>
+            <input type="text" class="form-control" [(ngModel)]="client.name" placeholder="" aria-describedby="helpId">
+            <label for="">Email</label>
+            <input type="text" class="form-control" [(ngModel)]="client.email" placeholder="" aria-describedby="helpId">
+            <label for="">Telefone</label>
+            <input type="text" class="form-control" [(ngModel)]="client.tel" placeholder="" aria-describedby="helpId">
+        </div>
+    </div>
+    <div class="identify-button">
+        <button type="button" class="btn btn-primary" (click)="sendOrder()" routerLink="/order">
+            Finalizar compra
+        </button>
+    </div>
+</div>

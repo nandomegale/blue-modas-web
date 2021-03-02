@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <ul>
+            <li *ngFor="let product of products">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8">
+                            <app-product [product]="product"></app-product>
+                        </div>
+
+                        <div class="col-4 addCart">
+                            <button type="button" class="btn btn-primary addCartButton" (click)="addToCart(product)">
+                                Adicionar ao carrinho
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="cart-button">
+        <button type="button" class="btn btn-primary" routerLink="/cart">
+            Ir para o carrinho
+        </button>
+    </div>
+</div>

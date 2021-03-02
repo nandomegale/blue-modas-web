@@ -1,0 +1,29 @@
+div img {
+  height: 100%;
+  width: 100%;
+}
+
+div.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 100%;
+}
+
+div.product-title {
+  margin: 0.5rem;
+}
+
+div.product-title strong span {
+  font-size: 2rem;
+}
+
+div.info-price {
+  margin: 0.5rem;
+}
+
+div.info-price span {
+  font-size: 1.5rem;
+}

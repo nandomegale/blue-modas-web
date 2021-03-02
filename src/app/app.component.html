@@ -1,0 +1,35 @@
+<header>
+  <nav class="navbar navbar-expand-sm navbar-light">
+    <img src="../assets/images/logo.png" alt="Logo" role="button" routerLink="/showcase" />
+    <button role="button" routerLink="/cart">
+      <span class="badge">{{cartQuantity}}</span>
+      <img src="../assets/images/cart.png" alt="Logo" role="button" />
+
+    </button>
+
+
+  </nav>
+</header>
+
+<div class="container">
+  <section>
+    <div class="row">
+      <div class="col-md-8">
+        <h1>
+          Blue Modas - Você sempre no estilo!
+        </h1>
+      </div>
+      <div class="col-md-4">
+        <img class="background-image" src="../assets/images/banner.png" alt="imagem">
+      </div>
+    </div>
+    <hr />
+  </section>
+
+  <section>
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+  </section>
+
+</div>

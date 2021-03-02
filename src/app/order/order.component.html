@@ -1,0 +1,46 @@
+<div>
+    <div>
+        <div>
+            <h2>Pedido número</h2> #<strong>{{order.id}}</strong>
+        </div>
+        <div>
+            <h2>Dados do cliente </h2>
+
+            <label>Nome: </label><span> {{order.client.name}}</span><br />
+            <label>Email: </label><span> {{order.client.email}}</span><br />
+            <label>Tel: </label><span> {{order.client.tel}}</span><br />
+
+        </div>
+        <div>
+            <div>
+                <h2>Produtos: </h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <ul>
+                        <li *ngFor="let product of products">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <app-product [product]="product"></app-product>
+                                    </div>
+
+                                    <div class="col-4 quantity">
+                                        <label>Quantidade: </label>
+                                        <span>{{product.quantity}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="back-button">
+        <button type="button" class="btn btn-primary" routerLink="/">
+            Voltar a vitrine
+        </button>
+    </div>
+</div>

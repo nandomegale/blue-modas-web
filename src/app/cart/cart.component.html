@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="cart-empty" *ngIf="!cart">
+        <p>Seu carrinho está vazio!</p>
+    </div>
+    <div class="row" *ngIf="cart">
+        <ul>
+            <li *ngFor="let product of cart">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8">
+                            <app-product [product]="product"></app-product>
+                        </div>
+                        <div class="col-4 input-qnt">
+                            <span>Quantidade: </span>
+                            <input type="number" id="quantityInput" [(ngModel)]="product.quantity" value="1" min="1">
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="confirm-button">
+        <button type="button" class="btn btn-primary" routerLink="/identification" (click)="confirmOrder()"
+            [disabled]=!cart>
+            Confirmar pedido
+        </button>
+    </div>
+</div>

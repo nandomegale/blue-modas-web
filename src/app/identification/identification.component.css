@@ -1,0 +1,21 @@
+div.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+div.form-group {
+  margin-bottom: 0;
+}
+
+div.identify-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
